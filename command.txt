@@ -1,0 +1,51 @@
+route k ture koredite hobe  tahol routing automatic hobe
+
+$routes->setAutoRoute(true);
+
+http://localhost:8080/index.php/home/
+
+
+public function about(){
+        return("about");
+    }
+method k call korte hobe
+http://localhost:8080/index.php/home/about
+######################################################
+2/ method hisabe id k pass korano jai
+public function user($id){
+        return "You have given this ID $id";
+    }
+
+http://localhost:8080/index.php/home/user/5
+
+
+
+
+.htaccess and index file k cut kore root folder ante hobe
+then php r file ar moto file k open korte hobe 
+
+index a auto file asbe 
+use a jaite hole home / and home theke home/user/4
+http://localhost/codelgniter_project/project_1/home/user/4
+
+
+controller create korte hole
+php spark make:controller product
+
+controller create kore comtroller k call korte hobe 
+product page asbe 
+http://localhost/codelgniter_project/project_1/Product
+
+product controller onno page k paitte hole 
+controller product and tar method k call korte hobe 
+http://localhost/codelgniter_project/project_1/Product/single
+
+
+#############################
+
+app.php page index.php k remove kore dite hobe
+ public $indexPage = '';
+
+
+
+
