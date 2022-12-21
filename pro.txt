@@ -1,0 +1,61 @@
+  ########## composer ar  create project ############
+
+composer create-project codeigniter4/appstarter ci4project3
+
+
+project file path #########
+      cd ci4project3
+ 
+######## project run #########
+php spark serve
+
+
+
+student CRUD
+          = Student Migration  =>php spark make:migration Student
+        =   Student Migrate       => php spark migrate
+         =  Student Model      => php spark make:model studentModel
+        =   Student Controller     => php spark make:controller student --restful
+        =   Student View
+
+
+table always plural hobe ######
+
+########## migration ar jonno #########
+1. php spark make:migration Student
+
+
+constraint = length
+
+2. php spark migrate
+
+php spark migrate:refresh
+roll back = ager sob table delete kore new vabe refresh hobe
+
+3. php spark make:model studentModel
+
+model folder a allowedFields a name dite hobe
+[name,email] jai filed golo ditei hobe oiglo dite hobe
+
+4. php spark make:controller student =>command dile 1ta indext(method)asbe
+
+
+php spark make:controller student --restful
+
+onk golo method asbe
+
+
+
+
+
+app database a connection  
+app - >database = migration  == database ar data connection
+filte a cords a connectivite
+helper  daokar
+language multi-language korte hole menu r language change korte 
+libraries 
+models = data layer   user ar jono data layer,studenta ar jonno = model ,,, product ar jonno = layer modelll
+controllers  =logic part create kore
+views all file golo view korbe
+
+kon mode ar data kkon view te show korbe oigolo controllers maintain kores

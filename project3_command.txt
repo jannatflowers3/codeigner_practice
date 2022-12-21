@@ -1,0 +1,10 @@
+  ########## composer ar  create project ############
+
+composer create-project codeigniter4/appstarter ci4project3
+
+
+project file path #########
+      cd ci4project3
+ 
+######## project run #########
+php spark serve
