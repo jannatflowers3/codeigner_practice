@@ -19,7 +19,7 @@
         <a class="nav-link <?= ($page =='contact') ?'active':''?>" href="/contact">Contact</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link <?= ($page =='students') ?'active':''?>" href="/studentlist">Student List</a>
+        <a class="nav-link <?= ($page =='student') ?'active':''?>" href="/student">Student List</a>
       </li>
       <!-- <li class="nav-item">
         <a class="nav-link disabled" href="#">Disabled</a>

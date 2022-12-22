@@ -37,7 +37,7 @@ class Student extends ResourceController
      */
     public function new()
     {
-        //
+        return view("students/add_student");
     }
 
     /**
@@ -47,7 +47,24 @@ class Student extends ResourceController
      */
     public function create()
     {
-        //
+        $model = new StudentModel();
+        // echo $this->request->getPost('name');
+        // $data['name'] = $this->request->getPost("name");
+        // $data['phone'] = $this->request->getPost("phone");
+        // $data['email'] = $this->request->getPost("email");
+        // $data['message'] = $this->request->getPost("message");
+        // $data['male'] = $this->requerst->getPost("male");
+        // $data['female'] = $this->request->getPost("female");
+        // print_r($data);
+
+        $data = $this->request->getPost();
+        // print_r($data);
+        $model->save($data);
+        // return redirect()->back();
+       // OR
+     return $this->index();
+     
+    
     }
 
     /**
@@ -57,7 +74,9 @@ class Student extends ResourceController
      */
     public function edit($id = null)
     {
-        //
+        $model = new studentModel();
+        $data['student'] = $model->find($id);
+        return view("students/edit_students",$data);
     }
 
     /**
@@ -77,6 +96,8 @@ class Student extends ResourceController
      */
     public function delete($id = null)
     {
-        //
+      $model = new studentModel();
+      $model->delete($id);
+      return redirect()->to('student');
     }
 }

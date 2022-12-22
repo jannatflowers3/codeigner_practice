@@ -8,7 +8,7 @@
      
  <h1 class="text-center text-success mt-5">All Student List</h1>
 
-<table border="1">
+<table border="1" class = "table table-striped" >
    <thead>
        <tr>
            <th>ID</th>
@@ -16,7 +16,8 @@
            <th>Phone</th>
            <th>Email</th>
            <th>Address</th>
-           <th>Gender</th>
+           <th>Address</th>
+           
        </tr>
 
    </thead>
@@ -29,10 +30,16 @@
        <td> <?php echo $student['email']?></td>    
        <td> <?php echo $student['address']?></td>    
        <td> <?php echo $student['gender']?></td>    
+       <td> 
+        <a href="/student/edit/<?= $student['id'] ?>"> Edit</a>
+        <a href="/student/delete/<?= $student['id'] ?>"> Delete</a>
+      </td>
+
        <tr>
      <?php }?>
 </tbody>
 </table>
+<a href="/student/new" class="btn btn-primary"> New Student</a>
   </div>
 </div>
 </div>

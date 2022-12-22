@@ -45,7 +45,6 @@
     </div>
   </div>
 </div>
-
 <?php
  echo view('includes/footer');
 ?>
