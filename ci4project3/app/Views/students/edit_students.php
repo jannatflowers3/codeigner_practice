@@ -5,7 +5,7 @@
 
     <div class="container ">
     <h1>Edit Student List</h1>
-    <form method="post" action ="/student/update">
+    <form method="post" action ="/student/update/<?=  $student['id']?>">
         <?=  csrf_field();?>
     <div class="mb-3">
     <label for="name" class="form-label">Name </label>
@@ -23,7 +23,7 @@
   <div class="mb-3">
    <div class="mb-3">
      <label for="address" class="form-label">Send Message</label>
-     <textarea class="form-control" name="address" id="" value ="<?= $student['address']?>"rows="3"></textarea>
+     <textarea class="form-control" name="address" id="" rows="3"><?= $student['address']?></textarea>
    </div>
   </div>
 

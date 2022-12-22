@@ -86,7 +86,13 @@ class Student extends ResourceController
      */
     public function update($id = null)
     {
-        //
+        $model = new studentModel();
+        $data = $this->request->getPost();
+        // print_r($data);
+        if($model->update($id,$data)){
+            return redirect()->to("student");
+        }
+
     }
 
     /**
